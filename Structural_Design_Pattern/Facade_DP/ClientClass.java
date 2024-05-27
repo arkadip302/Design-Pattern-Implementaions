@@ -6,6 +6,7 @@ public class ClientClass {
         Monitor monitor = new Monitor();
         Mouse mouse = new Mouse();
         Keyboard keyboard = new Keyboard();
+        // Instanting All The Sub Classes
 
         SetupFacade facade = new SetupFacade(mouse, laptop, monitor, keyboard);
         facade.switchOnSetup();
