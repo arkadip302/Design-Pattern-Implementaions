@@ -1,16 +1,23 @@
 package Cretaional_Design_Pattern.Prototype_Design_Pattern;
 
-import Cretaional_Design_Pattern.Abstract_Design_Pattern.Engineer;
-
 public class ClientClass {
-    public static void main(String[] args) {
-        Engineer engineer1Instance = InstanceProviderClass.provideInstance();
-        Engineer engineer3Instance = InstanceProviderClass.provideInstance();
+    public static void main(String[] args) throws CloneNotSupportedException {
+        CachedInstanceLoaded.loadToChache();
+
+        Doctor doctor = (Doctor) CachedInstanceLoaded.getObjectsBasedOnId(1);
+        System.out.println("Doctor Designation -" + doctor.getDesignation());
+
+        Teacher teacher = (Teacher) CachedInstanceLoaded.getObjectsBasedOnId(2);
+        System.out.println("Teacher Designation -" + teacher.getDesignation());
+
+        Engineer engineer = (Engineer) CachedInstanceLoaded.getObjectsBasedOnId(3);
+        System.out.println("Engineer Designation " + engineer.getDesignation());
+
+        Doctor doctor2 = (Doctor) CachedInstanceLoaded.getObjectsBasedOnId(1);
+        System.out.println("Doctor Designation " + doctor2.getDesignation());
         System.out.println("---------------------------------------------------------------------------");
-        if (engineer1Instance != engineer3Instance) {
-            System.out.println(
-                    "Will not have same object, as we are asking a Instance Provide For Creating An Instance And Every Time Its Returning A New Instance");
-        }
-        System.out.println("---------------------------------------------------------------------------");
+        System.err.println("Doctor 1 HasCode : " + doctor.hashCode());
+        System.err.println("Doctor 2 HasCode : " + doctor2.hashCode());
+
     }
 }
