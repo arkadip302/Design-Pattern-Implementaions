@@ -6,7 +6,7 @@ package Structural_Design_Pattern.Proxy_DP;
 public class ProxyClass extends MainClass {
 
     @Override
-    void methodToCall(String str) {
+    public void methodToCall(String str) {
         if (str.equalsIgnoreCase("Pass")) {
             super.methodToCall(str);
         } else {
