@@ -57,7 +57,7 @@ Factory Producer decides which Factory to provide based on business condition.
 Then factory will provide the instance of the actually class.
 
 For Code Reference - 
-[Prototype_Design_Pattern](https://github.com/arkadip302/Design-Pattern-Implementaions/tree/main/Cretaional_Design_Pattern/Abstract_Design_Pattern)
+[Abstract_Design_Pattern](https://github.com/arkadip302/Design-Pattern-Implementaions/tree/main/Cretaional_Design_Pattern/Abstract_Design_Pattern)
 
 
 
@@ -83,7 +83,7 @@ EX=> we are calling a database and trying to fetch objects and its a hardcoded q
 
 
 For Code Reference - 
-[Abstract Factory Pattern Implementation](https://github.com/arkadip302/Design-Pattern-Implementaions/tree/main/Cretaional_Design_Pattern/Prototype_Design_Pattern)
+[Prototype_Design_Pattern](https://github.com/arkadip302/Design-Pattern-Implementaions/tree/main/Cretaional_Design_Pattern/Prototype_Design_Pattern)
 
 
 **5. Builder Pattern**
